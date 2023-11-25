@@ -14,17 +14,60 @@ footer {
 .main-flex-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(grey, white);
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
 }
 
-.arena-section, .choice-section {
+.arena-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 300px;
 }
+
+.choice-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+}
+
+
 
 
 .score-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 60px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 60px;
+    text-align: center;
+}
+
+.player-choice {
+    max-width: 30%;
+    height: 100%;
+}
+
+.player-choice:hover, .player-choice:active {
+    background-color: rgba(255,255,255, 0.5);
+    cursor: pointer;
+}
+
+.player-choice img {
+    width: auto;
+    height: 100%;
+}
+
+.copyright {
+    padding: 10px;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors!</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="main-flex-container">
@@ -16,23 +17,23 @@
                 <div class="player-hand">
                     <img src="./images/rock.png" alt="">
                 </div>
-                <div class="result">
-                    <p>Player Wins!</p>
+                <div class="score-section">
+                    <div class="score-board">
+                        <div class="player-score">
+                            <p>00</p>
+                            <p>Player</p>
+                        </div>
+                        <div class="computer-score">
+                            <p>00</p>
+                            <p>Computer</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="computer-hand">
                     <img src="./images/cpu-rock.png" alt="">
                 </div>
             </div>
-            <div class="score-section">
-                <div class="score-board">
-                    <div class="player-score">
-                        <p>00</p>
-                    </div>
-                    <div class="computer-score">
-                        <p>00</p>
-                    </div>
-                </div>
-            </div>
+
             <div class="choice-section">
                 <div class="player-choice rock">
                     <img src="./images/rock.png" alt="">
@@ -46,6 +47,7 @@
             </div>
         </main>
         <footer>
+            <button>Confirm Choice</button>
             <p class="copyright">Copyright &copy; The Grumpy Tomato</p>
         </footer>
     </div>
