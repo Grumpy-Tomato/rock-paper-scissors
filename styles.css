@@ -1,3 +1,7 @@
+@keyframes toPaper {
+    
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -71,3 +75,4 @@ footer {
 .copyright {
     padding: 10px;
 }
+

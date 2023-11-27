@@ -60,7 +60,51 @@ const playRound = (playerSelection, computerSelection) => {
     }
 }
 
-const playerSelection = "paper";
-const computerSelection = getComputerChoice();
+let playerScoreValue = 0;
+const playerScore = document.querySelector('#player-score-value');
 
-console.log(playRound(playerSelection, computerSelection));
+let computerScoreValue = 0;
+const computerScore = document.querySelector('#computer-score-value');
+
+const playerChoiceRock = document.querySelector('#rock');
+const playerChoicePaper = document.querySelector('#paper');
+const playerChoiceScissors = document.querySelector('#scissors')
+
+playerChoiceRock.addEventListener('click', () => {
+    let roundResult = playRound("rock", getComputerChoice());
+    if( roundResult === 'you win!') {
+        playerScoreValue += 1;
+        playerScore.textContent = playerScoreValue;
+    } else if (roundResult === 'you lose!') {
+        computerScoreValue += 1;
+        computerScore.textContent = computerScoreValue;
+    } else {
+        console.log('tie');
+    }
+})
+
+playerChoicePaper.addEventListener('click', () => {
+    let roundResult = playRound("paper", getComputerChoice());
+    if( roundResult === 'you win!') {
+        playerScoreValue += 1;
+        playerScore.textContent = playerScoreValue;
+    } else if (roundResult === 'you lose!') {
+        computerScoreValue += 1;
+        computerScore.textContent = computerScoreValue;
+    } else {
+        console.log('tie');
+    }
+})
+
+playerChoiceScissors.addEventListener('click', () => {
+    let roundResult = playRound("scissors", getComputerChoice());
+    if( roundResult === 'you win!') {
+        playerScoreValue += 1;
+        playerScore.textContent = playerScoreValue;
+    } else if (roundResult === 'you lose!') {
+        computerScoreValue += 1;
+        computerScore.textContent = computerScoreValue;
+    } else {
+        console.log('tie');
+    }
+})
